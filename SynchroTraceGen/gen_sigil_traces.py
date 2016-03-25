@@ -185,6 +185,11 @@ def main():
                 log_file.write('--- {} seconds ---\n\n'.format(total_time))
                 log_file.write(log)
 
+    # clean up
+    os.chdir('..')
+    import shutil
+    shutil.rmtree(wd)
+
 
 if __name__ == '__main__':
     main()
