@@ -126,8 +126,8 @@ def main():
     output_path = os.path.abspath(args.output_path)
 
     # hardcoded defaults
-    dataset = 'simmedium'
-    threads = [1]  # , 2, 4, 8, 16]
+    dataset = ['test', 'simsmall', 'simmedium']
+    threads = [1, 2, 4, 8, 16, 32]
     parsec = ParsecConfig(args.parsec_path, dataset, threads)
 
     # generate command suite

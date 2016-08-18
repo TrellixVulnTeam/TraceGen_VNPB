@@ -165,3 +165,9 @@ class ParsecConfig(object):
     def bodytrack(self):
         return ParsecBenchmark("bodytrack", self.parsec_path, self.dataset,
                                self.threads)
+
+
+class blackscholes(object):
+
+    def __init__(self):
+        return
